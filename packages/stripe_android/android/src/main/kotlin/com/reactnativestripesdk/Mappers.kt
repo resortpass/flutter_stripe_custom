@@ -485,6 +485,7 @@ internal fun mapNextAction(type: NextActionType?, data: NextActionData?): Writab
     NextActionType.BlikAuthorize, NextActionType.UseStripeSdk, null -> {
       return null
     }
+    else -> null
   }
   return nextActionMap
 }
