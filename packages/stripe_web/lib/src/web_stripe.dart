@@ -373,6 +373,16 @@ class WebStripe extends StripePlatform {
   Future<void> resetPaymentSheetCustomer() {
     throw WebUnsupportedError.method('resetPaymentSheet');
   }
+
+  @override
+  Future<PaymentMethod> createPaymentMethodWithCardData(
+    PaymentMethodParams data,
+    Map<String, dynamic> cardData, [
+    Map<String, String> options = const {},
+  ]) {
+    // TODO: implement createPaymentMethodWithCardData
+    throw UnimplementedError();
+  }
 }
 
 class WebUnsupportedError extends Error implements UnsupportedError {

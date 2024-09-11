@@ -60,3 +60,6 @@ build/
 lcov.info
 
 **/pubspec.lock
+
+# FVM Version Cache
+.fvm/
